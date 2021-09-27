@@ -6,7 +6,12 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,
+                      cache = TRUE)
+
+# What does cache = TRUE mean?
+# This means that for any code chunk that I do not change
+# Use its stored data (i.e., do not rerun the code for it)
 ```
 
 ## R Markdown
